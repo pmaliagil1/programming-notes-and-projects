@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>parrafo con &lt;p      &gt;</p> 
+    <q>parrafo con &lt;q&gt;</q><br> 
+    <hr>parrafo con &lt;hr&gt; 
+    <pre>parrafo con &lt;pre     &gt;</pre>
+
+    espacio&nbsp;espacio
+
+    <h1>titulo</h1>
+
+    <a href="#final" id="inicio">Al final</a>
+
+    <h3>Listas ordenadas: </h3>
+    <ol>
+        <li>primero</li>
+        <li>segundo</li>
+        <li>tercero</li>
+    </ol>
+
+    <ol type="i">
+        <li>ptimero</li>
+        <li>segundo</li>
+        <li>tercero</li>
+    </ol>
+
+    <ol type="I">
+        <li>ptimero</li>
+        <li>segundo</li>
+        <li>tercero</li>
+    </ol>
+
+    <ol type="A">
+        <li>ptimero</li>
+        <li>segundo</li>
+        <li>tercero</li>
+    </ol>
+
+    <h3>Listas desordenadas: </h3>
+
+    <ul>
+        <li>primero</li>
+        <li>segundo</li>
+        <li>tercero</li>
+    </ul>
+
+    <ul type="square">
+        <li>primero</li>
+        <li>segundo</li>
+        <li>tercero</li>
+    </ul>
+    
+    <h3>Lista de listas: </h3>
+
+    <dl>
+        <dt>lista1:</dt>
+        <dd>primero</dd>
+        <dd>segundo</dd>
+        <dd>tercero</dd>
+        <dt>lista2:</dt>
+        <dd>primero</dd>
+        <dd>segundo</dd>
+        <dd>tercero</dd>
+        <dt>lista3:</dt>
+        <dd>primero</dd>
+        <dd>segundo</dd>
+        <dd>tercero</dd>
+    </dl>
+
+    <h3>tabla:</h3> 
+    <table border="2">
+        <thead>
+            <caption>verdadero titulo</caption>
+            <th colspan="3">titulo tabla</th>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4">final tabla</td>
+                <td>    <table border="2">
+                    <thead>
+                        <caption>verdadero titulo</caption>
+                        <th colspan="3">titulo tabla</th>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">final tabla</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">celda1</tdr>
+                            <td>celda2</td>
+                            <td>celda3</td>
+                            <td>celda as</td>
+                        </tr>
+                        <tr>
+                            <td>celda4</td>
+                            <td>celda5</td>
+                        </tr>
+                        <tr>
+                            <td>celda6</td>
+                        </tr>
+                    </tbody>
+                </table></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td rowspan="2">celda1</tdr>
+                <td>celda2</td>
+                <td>celda3</td>
+                <td>celda as</td>
+            </tr>
+            <tr>
+                <td>celda4</td>
+                <td>celda5</td>
+            </tr>
+            <tr>
+                <td>celda6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="#inicio" id="final">Al inicio</a><br>
+    <a href="/espacial.html">a mi espacial.html</a><br>
+    <img src="eva.jpg" alt="eva" width="500px" height="200px"><hr>
+    <a href="/espacial.html"><img src="eva.jpg" alt="eva1" width="100px" height="100px"></a>
+    <a href="mailto:jose.antonio.martin.gonzalez.alu@iesfernandoaguilar.es?subject= los muertos del examen" target="_top">Enviar mensaje</a>
+    <p>
+        <form action="action/page">
+            <input type="radio" id="radio" name="value">
+            <label for="radio">radio1</label><br>
+            <input type="radio" id="radio" name="value">
+            <label for="radio">radio2</label>
+
+            <fieldset>
+                <legend>los muertos del profe</legend>
+                <input type="radio" id="radio" name="value">
+                <label for="radio">radio1</label><br>
+                <input type="radio" id="radio" name="value">
+                <label for="radio2">radio2</label>
+            </fieldset>
+            <fieldset>
+                <legend>test</legend>
+                <input type="checkbox" id="opt1">
+                <label for="opt1">opt1</label><br>
+                <input type="checkbox" id="opta">
+                <label for="opta">opta</label><br>
+                <input type="checkbox" id="opt2">
+                <label for="opt2">opt2</label><br>
+            </fieldset>
+
+            <input type="range" value="1"><br>
+            <label for="fecha">Introduzca fecha: </label>
+            <input type="datetime-local" name="fecha" id="fecha"><br>
+            <p>
+                <label for="seleccion">Elige una da las opciones: </label>
+                <select>
+                    <optgroup label="Grupo1">
+                        <option value="opt1">option 1</option>
+                        <option value="opt2">option 2</option>
+                        <option value="opt3">option 3</option> 
+                    </optgroup>
+                    <optgroup label="Grupo2">
+                        <option value="opt1">option 1</option>
+                        <option value="opt2">option 2</option>
+                        <option value="opt3">option 3</option> 
+                    </optgroup>
+                    <optgroup label="Grupo3">
+                        <option value="opt1">option 1</option>
+                        <option value="opt2">option 2</option>
+                        <option value="opt3">option 3</option> 
+                    </optgroup>
+                </select>
+
+                <video src="" width="100px" height="100px">ELVIDE#</video><br>
+                <audio src=""></audio>
+            </p>
+            <p><textarea name="tarea" id="tarea" >Texto a introducir</textarea></p>
+            <label for="archivo">Seleccione archivo: </label>
+            <input type="file" id="archivo"><br>
+            <input type="reset" name="reset" id="reset"><br>
+            <input type="submit" name="sumbit" id="sumbit">
+        </form>
+    </p>
+</body>
+</html> 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castigo: Tabular programas</title>
+</head>
+
+<body>
+
+    <script>
+        // Get the number of times to repeat the message from the user
+        var n = parseInt(prompt("Introduce el número de veces que debo escribir la frase:"));
+
+        // Check if the input is a valid number
+        if (isNaN(n) || n <= 0) {
+            document.write("Por favor, introduce un número entero positivo válido.");
+        } else {
+            // Use a for loop to repeat the message n times
+            for (var i = 0; i < n; i++) {
+                document.write("Debo tabular bien mis programas. <br>"); // Add <br> for line breaks
+            }
+        }
+    </script>
+
+</body>
+
+</html>

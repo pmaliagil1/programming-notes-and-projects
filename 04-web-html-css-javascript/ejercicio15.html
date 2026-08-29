@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujar línea (personalizado)</title>
+</head>
+
+<body>
+
+    <script>
+        // Get the desired line length from the user
+        var longitudLinea = parseInt(prompt("Introduce la longitud de la línea:"));
+
+        // Get the character to use for the line from the user
+        var caracterLinea = prompt("Introduce el carácter para la línea (por ejemplo, *, -, #):");
+
+        // Check if the input is valid
+        if (isNaN(longitudLinea) || longitudLinea <= 0 || caracterLinea.length === 0) {
+            document.write("Por favor, introduce una longitud válida (entero positivo) y un carácter.");
+        } else {
+            // Use a for loop to print the specified character 'longitudLinea' times
+            for (var i = 0; i < longitudLinea; i++) {
+                document.write(caracterLinea);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

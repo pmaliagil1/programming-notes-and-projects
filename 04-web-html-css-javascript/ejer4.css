@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+
+.bandera{
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+
+
+
+.espana{
+    background: linear-gradient(to bottom, red 33%, yellow 33%, yellow 66%, red 66%);
+}
+.francia{
+    background: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%);
+}
+.alemania{
+    background: linear-gradient(to bottom, black 33%, red 33%, red 66%, yellow 66%);
+}
+
+
+.italia{
+    background: linear-gradient(to right, green 33%, white 33%, white 66%, red 66%);
+}
+
+
+.japon{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.japon::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+.polonia{
+    background: linear-gradient(to bottom, white 50%, red 50%);
+}
+
+
+.colombia{
+    background: linear-gradient(to bottom, yellow 33%, blue 33%, blue 66%, red 66%);
+}

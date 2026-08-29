@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujar línea</title>
+</head>
+
+<body>
+
+    <script>
+        // Get the desired line length from the user
+        var longitudLinea = parseInt(prompt("Introduce la longitud de la línea:"));
+
+        // Check if the input is a valid positive integer
+        if (isNaN(longitudLinea) || longitudLinea <= 0) {
+            document.write("Por favor, introduce una longitud válida (entero positivo).");
+        } else {
+            // Use a for loop to print the '*' character 'longitudLinea' times
+            for (var i = 0; i < longitudLinea; i++) {
+                document.write("*");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

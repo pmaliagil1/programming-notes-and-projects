@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial de un número</title>
+</head>
+
+<body>
+
+    <script>
+        // Pedir al usuario que introduzca un número entero
+        var numero = parseInt(prompt("Introduce un número entero para calcular su factorial:"));
+
+        // Verificar si la entrada es un número entero válido
+        if (isNaN(numero) || numero < 0) {
+            document.write("Por favor, introduce un número entero no negativo válido.");
+        } else {
+            // Calcular el factorial
+            var factorial = 1; // Inicializamos el factorial a 1 (el factorial de 0 es 1)
+            for (var i = 1; i <= numero; i++) {
+                factorial = factorial * i; // Multiplicamos factorial por cada número desde 1 hasta numero
+            }
+
+            // Mostrar el resultado
+            document.write("El factorial de " + numero + " es: " + factorial);
+        }
+    </script>
+
+</body>
+
+</html>

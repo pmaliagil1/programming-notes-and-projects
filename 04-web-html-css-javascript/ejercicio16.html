@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números hasta el límite</title>
+</head>
+
+<body>
+
+    <script>
+        // Get the upper limit from the user
+        var limite = parseInt(prompt("Introduce el límite hasta el que quieres imprimir los números:"));
+
+        // Check if the input is a valid positive integer
+        if (isNaN(limite) || limite <= 0) {
+            document.write("Por favor, introduce un límite válido (entero positivo).");
+        } else {
+            // Use a for loop to print numbers from 1 up to 'limite'
+            for (var i = 1; i <= limite; i++) {
+                document.write(i + "<br>"); // Add <br> for line breaks
+            }
+        }
+    </script>
+
+</body>
+
+</html>
