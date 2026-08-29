@@ -13,4 +13,5 @@ prog/
 ├── 03-ejercicios-java-poo/       # Object-Oriented Programming (OOP) in Java
 ├── 04-ejercicios-kotlin/         # Exercises developed in Kotlin
 ├── 04-web-html-css-javascript/   # Web development projects (HTML, CSS, JS)
-└── 05-proyectos-y-zips/          # Compressed projects and complete builds
+├── 05-proyectos-y-zips/          # Compressed projects and complete builds
+└── 06-ejercicios_c_c++/          # C, C++ projects
