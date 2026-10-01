@@ -1,0 +1,22 @@
+Los diccionarios en Python son como una agenda de contactos: tienes un nombre (Clave/Key) y un número (Valor/Value).Cuando usas un bucle for para recorrerlos, Python te da tres herramientas para decidir qué parte de la agenda quieres mirar. Aquí tienes la regla de oro para saber cuál elegir:1. .keys() → Solo los nombres (Claves)Es la opción por defecto. Si haces for x in mi_diccionario:, Python asume que quieres las llaves.Cuándo usarlo: Cuando solo te interesa la etiqueta o el identificador, o cuando quieres usar esa llave para buscar cosas en otros sitios.Pythoncapitales = {"España": "Madrid", "Francia": "París"}
+
+for pais in capitales.keys():
+    print(pais) 
+# Imprime: España, Francia
+2. .values() → Solo los datos (Valores)Aquí ignoras por completo cómo se llaman las claves y solo te quedas con el contenido.Cuándo usarlo: Cuando quieres hacer cálculos (sumar precios, promedios) o mostrar una lista de datos sin importar a quién pertenecen.Pythonprecios = {"pan": 1.20, "leche": 0.90, "queso": 5.00}
+
+total = 0
+for precio in precios.values():
+    total += precio
+print(f"Total a pagar: {total}")
+3. .items() → La pareja completa (Clave y Valor)Esta es la más potente y la que más usarás en ejercicios complejos. Te devuelve tuplas (parejas).Cuándo usarlo: Cuando necesitas ambos datos a la vez para construir una frase o tomar una decisión basada en la relación entre ellos.Pythonpuntuaciones = {"Juan": 8, "Ana": 10, "Luis": 4}
+
+for nombre, nota in puntuaciones.items():
+    if nota >= 5:
+        print(f"{nombre} ha aprobado con un {nota}")
+    else:
+        print(f"{nombre} ha suspendido.")
+Observa que en el for usamos dos variables: nombre (para la clave) y nota (para el valor).Resumen comparativo para buclesMétodo¿Qué recibes en cada vuelta?Ejemplo de usodiccionario.keys()Solo la Clave"Dime qué productos hay en stock"diccionario.values()Solo el Valor"Suma todos los puntos del equipo"diccionario.items()La Clave y el Valor"Dime quién sacó qué nota"Un truco que te ahorrará erroresA veces, en los ejercicios de archivos (como el de los emails), usamos diccionarios para contar.Si quieres contar cuántos emails envió cada persona, usarías algo así:Pythoncontadores = {}
+# ... (dentro de un bucle de archivo)
+contadores[email] = contadores.get(email, 0) + 1
+Y luego, para mostrar los resultados, usarías .items() porque querrás decir: "El usuario X envió Y mensajes".¿Te gustaría que hiciéramos un ejercicio de "conteo de palabras" (típico de examen) donde usemos .items() para mostrar los resultados finales? Es la combinación perfecta de lo que hemos visto hoy: archivos + listas + diccionarios.

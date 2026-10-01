@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Ejemplo</title>
+</head>
+<body>
+    <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>Datos básicos</legend>
+            
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="40"></textarea><br><br>
+            
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto"><br><br>
+            
+            <input type="checkbox" id="contador" name="contador">
+            <label for="contador">Añadir contador de visitas</label><br>
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+            <legend>Datos económicos</legend>
+            
+            <label for="precio">Precio:</label>
+            <input type="text" id="precio" name="precio" size="5"> €<br><br>
+            
+            <label for="impuestos">Impuestos:</label>
+            <select id="impuestos" name="impuestos">
+                <option value="4%">4%</option>
+                <option value="7%">7%</option>
+                <option value="16%">16%</option>
+                <option value="25%">25%</option>
+            </select>
+            <br><br>
+            
+            <label>Promoción:</label><br>
+            <input type="radio" id="ninguno" name="promocion" value="ninguno" checked>
+            <label for="ninguno">Ninguno</label><br>
+            <input type="radio" id="transporte" name="promocion" value="transporte">
+            <label for="transporte">Transporte gratuito</label><br>
+            <input type="radio" id="descuento" name="promocion" value="descuento">
+            <label for="descuento">Descuento 5%</label><br>
+        </fieldset>
+        
+        <br>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </form>
+</body>
+</html>

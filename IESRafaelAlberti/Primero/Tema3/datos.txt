@@ -1,0 +1,3 @@
+hola mundo esto es un ejemplo de fichero
+python es un lenguaje poderoso y divertido
+hola mundo python de ejemplo

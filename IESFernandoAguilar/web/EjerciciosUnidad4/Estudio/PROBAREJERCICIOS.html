@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var precio_sin_iva=123.45;
+        var iva=21;
+
+        //Se le aplica el IVA del 21% al precio = Precio producto + (21% precio producto)
+        document.write(`El precio final del producto es ${precio_sin_iva + precio_sin_iva*(iva/100)}<br>`);
+
+        //Igual pero redondeando el precio al entero más próximo
+        document.write(`El precio final del producto es ${Math.round(precio_sin_iva + precio_sin_iva*(iva/100))}<br>`);
+
+        //Redondear con 2 decimales (directamente)
+        document.write(`El precio final del producto es ${(precio_sin_iva + precio_sin_iva*(iva/100)).toFixed(2)}<br>`);
+
+        //Redondear con 2 decimales (no directamente y remarcando con énfasis fuerte , con <strong> el precio final
+        var precio_total = precio_sin_iva + precio_sin_iva*(iva/100);
+        document.write(`El precio final del producto es <strong> ${precio_total.toFixed(2)}</strong><br>`);
+
+
+    </script>    
+
+
+    
+</body>
+</html>

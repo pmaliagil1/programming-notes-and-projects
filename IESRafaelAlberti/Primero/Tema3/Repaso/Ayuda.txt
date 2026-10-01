@@ -1,0 +1,57 @@
+Entiendo perfectamente. A veces lo más difícil no es el código en sí, sino entender cómo "conectar" Python con ese archivo que tienes guardado en tu carpeta.
+
+Para hacerlo sencillo, vamos a dividirlo en tres pasos: ubicar, abrir y recorrer.
+
+1. El secreto de la ubicación
+Para que Python "coja" el archivo sin errores, lo más fácil es que tu archivo de código (script.py) y tu archivo de texto (datos.txt) estén en la misma carpeta.
+
+Si están juntos, solo tienes que llamarlo por su nombre: "datos.txt".
+
+2. La estructura "Sagrada" para leer (Línea a línea)
+Olvídate de métodos complicados. La forma estándar, segura y más sencilla de leer un archivo línea por línea es esta:
+
+Python
+with open("nombre_de_tu_archivo.txt", "r") as archivo:
+    for linea in archivo:
+        # Aquí haces lo que quieras con la línea
+        print(linea)
+¿Qué significa cada cosa?
+
+with: Es como decirle a Python: "Mientras trabajes con esto, mantenlo abierto, y cuando termines, ciérralo tú solo".
+
+open("...", "r"): El "r" significa Read (Leer). Es el modo de seguridad para no borrar nada por accidente.
+
+as archivo: Es el nombre (la etiqueta) que le das al archivo dentro de tu código.
+
+for linea in archivo: Este es el truco mágico. Python lee el archivo un renglón a la vez. No se satura la memoria aunque el archivo sea enorme.
+
+3. El problema del "Salto de Línea" invisible
+Cuando lees un archivo, cada línea viene con un "Enter" invisible al final (\n). Si haces un print, verás que deja un espacio doble. Para limpiar la línea y trabajar solo con el texto, usa .strip().
+
+Ejercicio práctico paso a paso
+Imagina que queremos contar cuántas veces aparece la palabra "Python" en un archivo:
+
+Python
+# 1. Abrimos de forma segura
+with open("notas.txt", "r") as f:
+    contador = 0
+    
+    # 2. Recorremos línea por línea
+    for linea in f:
+        # 3. Limpiamos espacios y saltos de línea
+        linea_limpia = linea.strip()
+        
+        # 4. Procesamos la información
+        if "Python" in linea_limpia:
+            contador += 1
+            print(f"Encontrado en: {linea_limpia}")
+
+print(f"Total de líneas con Python: {contador}")
+Resumen para tus próximos ejercicios:
+Asegúrate de que el .txt existe en la misma carpeta.
+
+Usa siempre with open(...), te ahorrará muchos errores de archivos "bloqueados" porque olvidaste cerrarlos.
+
+Usa el bucle for directamente sobre el archivo; es la forma más natural de Python de entender los renglones.
+
+¿Te gustaría que probáramos a hacer un ejercicio donde tú intentes escribir el código para buscar una palabra específica que te pida el usuario dentro de un archivo?

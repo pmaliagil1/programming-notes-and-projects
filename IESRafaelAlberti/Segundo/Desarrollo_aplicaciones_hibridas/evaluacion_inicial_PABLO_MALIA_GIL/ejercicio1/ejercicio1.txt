@@ -1,0 +1,7 @@
+node -v   -> Da la version de node instalada
+
+
+npm -v  ->  Da la version del entorno instalada
+
+
+git --version   -> Da la version de git instalada

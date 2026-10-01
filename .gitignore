@@ -1,0 +1,34 @@
+# --- Configuración de IDEs / editores ---
+.metadata/
+.vscode/
+.idea/
+.github/appmod/
+.github/modernize/
+*.iml
+
+# --- Compilados y binarios ---
+*.class
+*.jar
+*.exe
+*.o
+**/bin/
+**/build/
+**/out/
+**/target/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+
+# --- Kotlin / Gradle / Dart / Node ---
+.gradle/
+.kotlin/
+.dart_tool/
+node_modules/
+
+# --- Utilidades locales (no se suben) ---
+/_utilidades/
+/IESRafaelAlberti/Primero/Tema1/tareaGit/

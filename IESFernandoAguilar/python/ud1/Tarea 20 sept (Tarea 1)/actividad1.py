@@ -1,0 +1,5 @@
+print("Entrada: ")
+edad = int(input("¿Cuantos años tienes?"))
+altura = input("¿Cual es tu altura?")
+print ("Salida: ")
+print ("Tienes",edad, "años y mides", altura, "metros.")

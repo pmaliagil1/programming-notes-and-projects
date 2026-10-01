@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rellena tu CV</title>
+</head>
+<body>
+    <h2>Rellena tu CV</h2>
+    <form id="form3" name="form3" action="datoscv.php" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            
+            <label for="provincia">Provincia:</label><br>
+            <select id="provincia" name="provincia">
+                <option value="">Selecciona</option>
+                <option value="almeria">Almería</option>
+                <option value="cadiz">Cádiz</option>
+                <option value="cordoba">Córdoba</option>
+                <option value="granada">Granada</option>
+                <option value="huelva">Huelva</option>
+                <option value="jaen">Jaén</option>
+                <option value="malaga">Málaga</option>
+                <option value="sevilla">Sevilla</option>
+            </select>
+            <br><br>
+
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+            
+            <select id="dia" name="dia">
+                <option value="">Día</option>
+                {% for i in range(1, 32) %}
+                <option value="{{ i }}">{{ i }}</option>
+                {% endfor %}
+            </select>
+
+            <select id="mes" name="mes">
+                <option value="">Mes</option>
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select>
+<!--  -->
+            <select id="anio" name="anio">
+                <option value="">Año</option>
+                {% for i in range(1900, 2005) %}
+                <option value="{{ i }}">{{ i }}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Temas de interés</legend>
+            <label for="intereses">Temas de interés:</label><br>
+            <select id="intereses" name="intereses" multiple>
+                <option value="administracion">Administración de base de datos</option>
+                <option value="analisis">Análisis y programación</option>
+                <option value="arquitectura">Arquitectura</option>
+                <option value="calidad">Calidad</option>
+            </select>
+        </fieldset>
+        <br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
